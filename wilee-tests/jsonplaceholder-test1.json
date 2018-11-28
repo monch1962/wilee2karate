@@ -1,0 +1,16 @@
+{
+  "test_info": {
+    "id": "get users",
+    "description": "Test hitting jsonplaceholder JSON API",
+    "version": "1",
+    "author": "David Mitchell"
+  },
+  "request": {
+    "verb": "GET",
+    "url": "/users"
+  },
+  "expect": {
+    "http_code": 200,
+    "parse_as": "regex"
+  }
+}

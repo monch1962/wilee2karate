@@ -1,0 +1,20 @@
+{
+  "test_info": {
+    "id": "get users",
+    "description": "Test hitting jsonplaceholder JSON API",
+    "version": "1",
+    "author": "David Mitchell"
+  },
+  "request": {
+    "verb": "GET",
+    "url": "/users"
+  },
+  "expect": {
+    "max_latency_ms": 120000,
+    "parse_as": "regex",
+    "http_code": 200,
+    "_comment_body": [{
+      "id": "\\d+"
+    }]
+  }
+}
